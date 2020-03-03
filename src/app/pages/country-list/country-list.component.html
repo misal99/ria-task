@@ -1,0 +1,12 @@
+<h2 class="text-center heading mt-2 text-uppercase">Country list</h2>
+<div class="row mx-auto col-11">
+  <div class="col-sm-3 mt-4 mb-4" *ngFor="let country of countries">
+    <div class="card shadow">
+      <img class="card-img-top image" src="{{country.flag}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{country.name}}</h5>
+        <p class="card-text">{{country.capital}} {{country.region}}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.login {
+    height: 82%;
+}
+
+.header, .login-btn {
+    background: #683aad;
+}
+
+.footer {
+    color: #fff;
+    padding: 1em;
+}

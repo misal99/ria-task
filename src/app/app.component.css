@@ -1,0 +1,25 @@
+
+.header, .login-btn {
+    background: #683aad;
+}
+
+.footer {
+    color: #fff;
+    padding: 1em;
+}
+.user {
+    color: #fff;
+}
+
+.content {
+    height: 73%;
+}
+
+.footer-text {
+    color: #fff;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
