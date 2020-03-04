@@ -14,10 +14,9 @@ export class AuthenticationService {
 
   public get currentUserValue(): IUser {
     return this.currentUserSubject.value;
-}
+  }
 
   login(user: IUser) {
-
     if (user.userName === 'admin@gmail.com' && user.password === 'admin') {
       localStorage.setItem('currentUser', JSON.stringify({ userName: user.userName, password: user.password}));
       this.currentUserSubject.next(user);

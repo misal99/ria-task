@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'rai-task';
   currentUser: IUser;
 
@@ -15,7 +15,7 @@ export class AppComponent implements OnInit{
       private authenticationService: AuthenticationService,
       private router: Router,
   ) {
-      this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+      this.authenticationService.currentUser.subscribe(user => this.currentUser = user);
   }
 
   ngOnInit() {
